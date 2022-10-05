@@ -12,11 +12,14 @@
 }
 body{
     margin: 0;
-    padding: 0px 20px 0px 30px;
+    padding: 0px 20px 0px 20px;
 }
 a{
     color: inherit;
     text-decoration: none;
+}
+section{
+    display: block;
 }
 /* ---------------------------------------- */
 /* ==            HEADER ET NAV          == */
@@ -112,7 +115,6 @@ header nav ul li:hover a{
 /*----------------------------------------*/
 .filters{
     display: flex;
-    
     width: 55%;
     height: 80px;
 }
@@ -128,10 +130,6 @@ header nav ul li:hover a{
 }
 .titlefilters i{
     color: var(--color-blue);
-    border: black solid 3px;
-    border-color: var(--bck-blue);
-    background-color: var(--bck-blue);
-    border-radius: 50%;
     margin-left: -8px;
     width: 50px;
     height: 50px;
@@ -139,8 +137,8 @@ header nav ul li:hover a{
     align-items: center;
     justify-content: center;
 }
-.EcoFilter, .FamilialFilter , .RomanticFilter , .AnimalsFilter{
-    border-radius: 100px 100px 100px 100px;
+.FiltersButtons{
+    border-radius: 100px;
     height: 55px;
     font-size: large;
     cursor: pointer;
@@ -151,7 +149,9 @@ header nav ul li:hover a{
     display: flex;
     align-items: center;
 }
-
+.FiltersButtons:hover{
+    background-color: var(--bck-blue);
+}
 /***** INFORMATION LOGEMENTS DISPONIBLES *****/
 
 .dispo i{
@@ -169,8 +169,7 @@ header nav ul li:hover a{
     margin-left: 20px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 30px
+    gap: 30px;
 }
 .HbMain{
     background-color: rgb(218, 218, 218);
@@ -193,6 +192,8 @@ header nav ul li:hover a{
     border-radius: 20px;
     line-height: 4px;
     width: 300px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
 }
 .CardFig{
     display: block;
@@ -231,7 +232,8 @@ header nav ul li:hover a{
     cursor: pointer;
     border-radius: 20px;
     line-height: 5px;
-    height: 100%;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
 }
 .PopLink{
     display: flex;
@@ -240,7 +242,9 @@ header nav ul li:hover a{
 .PopFigImg{
     display: block;
     width: 30%;
+    height: 144px;
     border-radius: 10px 0 0 10px;
+    object-fit: cover;
 }
 .PopFigText{
     padding-left: 5px; 
@@ -248,4 +252,107 @@ header nav ul li:hover a{
 .NotesPop{
     margin-top: 30px;
     color: var(--color-blue);
+}
+.Plus{
+    margin-left: 55px;
+}
+/* ---------------------------------------- */
+/* ==            Activités               ==*/
+/*----------------------------------------*/
+
+.Activities{
+    padding: 0 3%;
+}
+.ListActivities{
+    height: 510px;
+    display: flex;
+    justify-content: space-between;
+}
+.ListActivities img{
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+}
+.ActCard{
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+.ActCard h3{
+    padding-left: 10px;
+}
+/* ---------------------------------------- */
+/* ==              Footer                ==*/
+/*----------------------------------------*/
+footer{
+    display: flex;
+    padding: 0 3%;
+    background-color: var(--back-grey);
+    margin-top: 2%;
+}
+footer div{
+    text-align: left;
+    flex: 1;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer li{
+    line-height: 2;
+}
+/* ---------------------------------------- */
+/* ==           Media Queries            ==*/
+/*----------------------------------------*/
+@media (max-width: 992px) {
+    .filters{
+        width: auto;
+    }
+    .hebergements{
+        flex-direction: column;
+        margin: 0;
+    }
+    .Card1,.Card2,.Card3,.Card4,.Card5,.Card6{
+        width: 250px;
+    }
+    .Popular{
+        width: 95%;
+        margin: 0;
+    }
+    .PopConteneur{
+        flex-direction: row;
+        height: 144px;
+        width: auto;
+    }
+    .PopConteneur h3{
+        line-height: normal;
+        margin-top: auto;
+    }
+    .Pop1,.Pop2,.Pop3{
+        width: 260px;
+    }
+    .PopFigImg{
+        width: 100px;
+        height: 130px;
+    }
+    .ActCard{
+        height: 80%;
+        width: 200px;
+    }
+    .ActCard img{
+        height: 300px;
+    }
+}
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

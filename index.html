@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <!-- Section Header barre de nav -->
+    <!---------------------------->
+    <!---------Header Nav--------->
+    <!----------------------------> 
     <header>
         <div class="logo">
             <img src="logo/Booki.png" alt="Logo Booki">
@@ -37,20 +39,22 @@
             <input type="button" class="bouton"  value="Rechercher">
         </form>
     </section>
-    <!--Section Filtres-->
+    <!---------------------------->
+    <!----------Filtres----------->
+    <!----------------------------> 
     <section class="filters">
         <h2>Filtres</h2>
         <div class="titlefilters">   
-            <button class="EcoFilter" type="button">
+            <button class="FiltersButtons" type="button">
                 <i class="fa-solid fa-money-bill-wave"></i> Économique
             </button>
-            <button class="FamilialFilter" type="button">
+            <button class="FiltersButtons" type="button">
                 <i class="fa-solid fa-child-reaching"></i> Familial
             </button>
-            <button class="RomanticFilter" type="button">
+            <button class="FiltersButtons" type="button">
                 <i class="fa-sharp fa-solid fa-heart"></i> Romantique
             </button>
-            <button class="AnimalsFilter" type="button">
+            <button class="FiltersButtons" type="button">
                 <i class="fa-solid fa-dog"></i> Animaux autorisés
             </button>
         </div>
@@ -58,7 +62,9 @@
         <div class="dispo">
             <i class="fa-solid fa-info"></i> Plus de 500 logements disponibles dans cette ville
         </div>
-    <!--Section cartes hebergments-->
+    <!---------------------------->
+    <!-------Hébergements--------->
+    <!----------------------------> 
     <section class="hebergements">
         <div class="HbMain">
             <h2>Hébergements à Marseille</h2>
@@ -92,7 +98,7 @@
                             </figcaption>
                         </figure>
                         <p>
-                            Nuit à partir de<strong>52€</strong>
+                            Nuit à partir de<strong> 52€</strong>
                         </p>
                         <div class="NotesCards">
                             <i class="fa-solid fa-star"></i>
@@ -184,9 +190,11 @@
                     </a>
                 </article>
             </div>
-            <h2><a href="#">Afficher plus</a></h2>
+            <h2 class="Plus"><a href="#">Afficher plus</a></h2>
         </div>
-        <!--Section cartes Popularité-->
+        <!---------------------------->
+        <!---------Populaire---------->
+        <!----------------------------> 
         <div class="Popular">
             <h2 class="PopularTitle"> Les plus populaires</h2>
             <div class="PopConteneur">
@@ -211,7 +219,7 @@
                     <a class="PopLink" href="#">
                         <img class="PopFigImg" src="Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre à décoration verte"> 
                         <div class="PopFigText">
-                            <h3>Hôtel le soleil du matin</h3>
+                            <h3>Au coeur de l'eau Chambre d'hôtes</h3>
                             <p>Nuit à partir de<strong> 71€</strong>
                             </p>
                             <div class="NotesPop">
@@ -228,7 +236,7 @@
                     <a class="PopLink" href="#">
                         <img class="PopFigImg" src="Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre à décoration verte"> 
                         <div class="PopFigText">
-                            <h3>Hôtel le soleil du matin</h3>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de
                                 <strong> 68€</strong>
                             </p>
@@ -245,5 +253,83 @@
             </div>
         </div>  
     </section>
+    <!---------------------------->
+    <!---------Activites---------->
+    <!----------------------------> 
+    <section class="Activities">     
+         <h2>Activités à Marseille</h2>
+        <div class="ListActivities">
+            <a class="Port" href="#">
+                <div class="ActCard">
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du vieux Port">
+                    <div class="ActName">
+                        <h3>Vieux Port</h3>
+                    </div>
+                </div>
+            </a>
+            <a class="Fort" href="#">
+                <div class="ActCard">
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    <div class="ActName">
+                        <h3>Fort de Pomègues</h3>
+                    </div>
+                </div>
+            </a>
+            <a class="Calanques" href="#">
+                <div class="ActCard">
+                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                    <div class="ActName">
+                        <h3>Parc National des Calanques</h3>
+                    </div>
+                </div>
+            </a>
+            <a class="Garde" href="#">
+                <div class="ActCard">
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <div class="ActName">
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="About">
+            <h3>A propos</h3>
+            <ul>
+                <li>
+                    <a href="#">Fonctionnement du site</a> 
+                </li>
+                <li>
+                    <a href="#">Condition générales de vente</a>
+                </li>
+                <li>
+                    <a href="#">Données et confidentialité</a>
+                </li>
+            </ul>
+        </div>
+        <div class="Hosts">
+            <h3>Nos hébergements</h3>
+            <ul>
+                <li>
+                    <a href="#">Charte qualité</a> 
+                </li>
+                <li>
+                    <a href="#">Soumettre votre hôtel</a>
+                </li>
+            </ul>
+        </div>
+        <div class="Assist">
+            <h3>Assistance</h3>
+            <ul>
+                <li>
+                    <a href="#">Centre d'aide</a> 
+                </li>
+                <li>
+                    <a href="#">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>  
 </html>
