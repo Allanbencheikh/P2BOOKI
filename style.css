@@ -11,9 +11,9 @@
     font-family: "Raleway",Arial, sans-serif;
 }
 body{
-    margin: 0;
     max-width: 1400px;
     margin: auto;
+    padding: 1%;
 }
 a{
     color: inherit;
@@ -42,7 +42,7 @@ header nav ul {
     margin: 0;
 }
 header nav ul li{
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px;
     padding: 50px 25px;
     border-top: 3px solid transparent;
 }
@@ -158,20 +158,20 @@ header nav ul li a:hover {
 /* ==           HEBERGEMENTS             ==*/
 /*----------------------------------------*/
 
-.hebergements{
+.Main{
     width: 100%;
     display: flex;
     gap: 30px;
 }
-.hebergements h3{
+.Main h3{
     margin: 0;
     line-height: normal;
 }
-.HbMain{
+.Hébergements{
     background-color: rgb(218, 218, 218);
     border-radius: 20px;
 }
-.HbMain h2{
+.Hébergements h2{
     padding: 20px 0px 0px 15px;
 }
 .Conteneur{
@@ -302,16 +302,16 @@ footer li{
 /* ---------------------------------------- */
 /* ==       Media Queries Tablette       ==*/
 /*----------------------------------------*/
-@media (max-width: 992px) {
+@media ( max-width: 992px) {
     .filters{
         width: 100%;
     }
-    .hebergements{
+    .Main{
         flex-direction: column;
         margin: 0;
     }
     .Cards{
-        width: 250px;
+        width: 25%;
     }
     .Popular{
         width: 95%;
@@ -319,25 +319,27 @@ footer li{
     }
     .PopConteneur{
         flex-direction: row;
-        height: 144px;
     }
     .PopConteneur h3{
         line-height: normal;
-        margin-top: auto;
     }
-    .Pop1,.Pop2,.Pop3{
-        width: 260px;
+    .PopLink{
+        width: 95%;
     }
     .PopFigImg{
-        width: 100px;
-        height: 130px;
+        width: 50%;
+        height: 100%;
+    }
+    .PopFigText{
+        width: 95%;
     }
     .ActCard{
         height: 80%;
-        width: 200px;
+        width: 25%;
     }
     .ActCard img{
         height: 300px;
+        width: 100%;
     }
 }
 /* ---------------------------------------- */
@@ -380,8 +382,15 @@ footer li{
         flex-direction: column;
         align-items: flex-start;
     }
+    .filters h2{
+        padding-left: 2%;
+    }
+    .dispo{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
     .titlefilters{
-        width: 100%;
+        width: 95%;
         gap: 0;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -392,18 +401,35 @@ footer li{
         margin-top: 15px;
     }
     .Popular{
-        width: 100%;
-        padding: 0;
+        width: 95%;
+        padding: 2%   
     }
-    .hebergements{
+    .PopFigImg{
+        width: 33%;
+        height: 200px;
+    }
+    .PopFigText{
+        width: 100%;
+    }
+    .NotesPop{
+        margin-top: 20%;
+    }
+    .Main{
         flex-direction: column-reverse;
     }
     .PopConteneur{
         flex-direction: column;
         height: fit-content;
+        gap: 50px;
     }
     .Conteneur{
         flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
     }
     .Cards{
         width: 90%;
@@ -415,7 +441,10 @@ footer li{
     .ListActivities{
         flex-direction: column ;
         height: fit-content;
-        gap: 20px;
+        gap: 50px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15%;
     }
     .ActCard{
         width: 100%;
