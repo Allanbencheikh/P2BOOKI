@@ -111,13 +111,13 @@ header nav ul li a:hover {
 .filters{
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 /*     FILTRES ENTIERS      */
 
 .titlefilters{
     display: flex;
-    width: 50%;
     gap: 30px;
     justify-content: center;
 }
@@ -131,7 +131,6 @@ header nav ul li a:hover {
 }
 .FiltersButtons{
     border-radius: 100px;
-    height: 55px;
     font-size: large;
     cursor: pointer;
     border: black 3px solid;
@@ -203,7 +202,6 @@ header nav ul li a:hover {
 /*----------------------------------------*/
 
 .Popular{
-    width : 40%;
     background-color: rgb(219, 219, 219);
     border-radius: 20px;
     padding: 25px;
