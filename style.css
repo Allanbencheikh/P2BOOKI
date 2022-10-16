@@ -243,12 +243,10 @@ header nav ul li a:hover {
 /* ==            Activités               ==*/
 /*----------------------------------------*/
 
-.Activities{
-    padding: 0 3%;
-}
 .ListActivities{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .ListActivities img{
     width: 400px;
