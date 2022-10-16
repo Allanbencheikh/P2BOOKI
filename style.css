@@ -12,7 +12,8 @@
 }
 body{
     margin: 0;
-    padding: 0px 20px 0px 20px;
+    max-width: 1400px;
+    margin: auto;
 }
 a{
     color: inherit;
@@ -169,7 +170,6 @@ header nav ul li a:hover {
 .HbMain{
     background-color: rgb(218, 218, 218);
     border-radius: 20px;
-    width: fit-content;
 }
 .HbMain h2{
     padding: 20px 0px 0px 15px;
@@ -211,6 +211,15 @@ header nav ul li a:hover {
     background-color: rgb(219, 219, 219);
     border-radius: 20px;
     padding: 25px;
+}
+.PopTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PopTop i{
+    color: var(--color-blue);
+    height: fit-content;
 }
 .PopConteneur{
     display: flex;
@@ -291,7 +300,7 @@ footer li{
     line-height: 2;
 }
 /* ---------------------------------------- */
-/* ==           Media Queries            ==*/
+/* ==       Media Queries Tablette       ==*/
 /*----------------------------------------*/
 @media (max-width: 992px) {
     .filters{
@@ -331,17 +340,15 @@ footer li{
         height: 300px;
     }
 }
+/* ---------------------------------------- */
+/* ==        Media Queries Phone         ==*/
+/*----------------------------------------*/
 @media (max-width: 768px) {
-    body{
-        padding: 0;
-    }
     header{
         flex-direction: column;
     }
     .logo{
         display: flex;
-        text-align: center;
-        align-items: center;
     }
     .listnav ul{
         padding: 0;
@@ -415,5 +422,9 @@ footer li{
     }
     .ActCard img{
         width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        font-size: large;
     }
 }
