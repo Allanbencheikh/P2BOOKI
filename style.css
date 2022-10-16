@@ -417,6 +417,9 @@ footer li{
     .Main{
         flex-direction: column-reverse;
     }
+    .Hébergements{
+        width: 99%;
+    }
     .PopConteneur{
         flex-direction: column;
         height: fit-content;
@@ -429,7 +432,6 @@ footer li{
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-      }
     }
     .Cards{
         width: 90%;
