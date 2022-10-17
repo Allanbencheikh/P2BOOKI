@@ -269,6 +269,7 @@ header nav ul li a:hover {
     padding: 5px;
     width: 60%;
     font-size: 15px;
+    line-height: normal;
 }
 .NotesPop{
     color: var(--color-blue);
