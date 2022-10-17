@@ -13,7 +13,6 @@
 body{
     max-width: 1400px;
     margin: auto;
-    padding: 1%;
 }
 a{
     color: inherit;
@@ -74,6 +73,7 @@ header nav ul li a:hover {
     border-color: var(--back-grey);
     padding: 15px 15px;
     border-radius: 20px 0 0 20px;
+    font-size: 18px;
 }
 .icon:hover{
     cursor: pointer; /*     a pour rendre cliquable      */
@@ -100,7 +100,19 @@ header nav ul li a:hover {
     border-radius: 0px 20px 20px 0px;
     font-size: large;
     height: 60px;
-    width: 150px;
+    width: 10%;
+}
+.boutonMobile{
+    display: none;
+    background-color: var(--color-blue);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    font-size: large;
+    height: 60px;
+    width: 10%;
+    cursor: pointer;
 }
 .bouton:hover{
     cursor:pointer;
@@ -167,11 +179,11 @@ header nav ul li a:hover {
     margin: 0;
     line-height: normal;
 }
-.Hébergements{
-    background-color: rgb(218, 218, 218);
+.Hebergements{
+    background-color:var(--back-grey);
     border-radius: 20px;
 }
-.Hébergements h2{
+.Hebergements h2{
     padding: 20px 0px 0px 15px;
 }
 .Conteneur{
@@ -187,12 +199,17 @@ header nav ul li a:hover {
     cursor: pointer;
     border-radius: 20px;
     line-height: 4px;
-    width: 25%;
+    width: 28%;
     box-shadow: 0 0 10px grey;
     overflow: hidden;
 }
 .CardFig{
     margin: 0;
+}
+.CardFig p{
+    font-weight: bold;
+    font-size: large;
+    line-height: 100%;
 }
 .CardFigImg{
     height: 150px;
@@ -208,7 +225,7 @@ header nav ul li a:hover {
 /*----------------------------------------*/
 
 .Popular{
-    background-color: rgb(219, 219, 219);
+    background-color: var(--back-grey);
     border-radius: 20px;
     padding: 25px;
 }
@@ -238,7 +255,7 @@ header nav ul li a:hover {
 }
 .PopFigImg{
     display: block;
-    width: 30%;
+    width: 40%;
     height: 144px;
     border-radius: 10px 0 0 10px;
     object-fit: cover;
@@ -248,6 +265,8 @@ header nav ul li a:hover {
     flex-direction: column;
     gap: 5px;
     padding: 5px;
+    width: 60%;
+    font-size: 15px;
 }
 .NotesPop{
     color: var(--color-blue);
@@ -305,6 +324,19 @@ footer li{
 @media ( max-width: 992px) {
     .filters{
         width: 100%;
+    }
+    .bouton{
+        background-color: var(--color-blue);
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0px 20px 20px 0px;
+        font-size: large;
+        height: 60px;
+        width: 20%;
+    }
+    .boutonMobile{
+        display: none;
     }
     .Main{
         flex-direction: column;
@@ -368,10 +400,30 @@ footer li{
     }
     .searchbar{
         width: 95%;
-        font-size: 18px;
+        font-size: 30px;
+    }
+    .searchbar h1 , p{
+        margin-left: 2%;
     }
     .bar{
         width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon{
+        font-size: 20px;
+    }
+    .bouton{
+        font-size: 25px;
+        display: none;
+    }
+    .boutonMobile{
+        font-size: 20px;
+        display: inline;
+    }
+    .champ{
+        width: 50%;
+        margin-left: 5%;
     }
     .logo{
         display: flex;
@@ -401,8 +453,9 @@ footer li{
         margin-top: 15px;
     }
     .Popular{
-        width: 95%;
-        padding: 2%   
+        width: 90%;
+        padding: 2%;
+        margin: auto;
     }
     .PopFigImg{
         width: 33%;
@@ -417,13 +470,17 @@ footer li{
     .Main{
         flex-direction: column-reverse;
     }
-    .Hébergements{
-        width: 99%;
+    .Hebergements{
+        width: 90%;
+        padding: 2%;
+        margin: auto;
+        background-color: white;
     }
     .PopConteneur{
         flex-direction: column;
         height: fit-content;
         gap: 50px;
+        align-items: center;
     }
     .Conteneur{
         flex-direction: column;
