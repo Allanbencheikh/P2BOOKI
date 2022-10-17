@@ -1,0 +1,520 @@
+/* ---------------------------------------- */
+/* ==            CODE GENERAL           == */
+/*----------------------------------------*/
+
+:root{
+    --color-blue : #0065FC;
+    --back-grey : #f2f2f2;
+    --bck-blue : #DEEBFF;
+}
+*{
+    font-family: "Raleway",Arial, sans-serif;
+}
+body{
+    max-width: 1400px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ---------------------------------------- */
+/* ==            HEADER ET NAV          == */
+/*----------------------------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+header .logo img{
+    width: 150px;
+}
+
+/*     RECHERCHE TOP      */
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+header nav ul li{
+    margin: 0px 20px;
+    padding: 50px 25px;
+    border-top: 3px solid transparent;
+}
+header nav ul li a{
+    color: black;
+}
+header nav ul li:hover{
+    border-color: var(--color-blue , blue);
+    padding: 50px 25px;
+}
+header nav ul li a:hover {
+    color: var(--color-blue , blue);
+}
+
+/* ---------------------------------------- */
+/* ==        BARRE DE RECHERCHE         == */
+/*--------------------------------------- */
+
+.bar{
+    display: flex;
+    margin-top: 20px;
+}
+
+/*     BARRE ENTIERE      */
+
+.icon{
+    background-color: var(--back-grey);
+    border:black 1px solid;
+    border-color: var(--back-grey);
+    padding: 15px 15px;
+    border-radius: 20px 0 0 20px;
+    font-size: 18px;
+}
+.icon:hover{
+    cursor: pointer; /*     a pour rendre cliquable      */
+    background-color: rgb(199, 199, 199);
+}
+
+/*     ICONE LOCALISATION      */
+
+.champ{
+    font-weight: bold;
+    display: flex;
+    font-size: large;
+    border: 1px solid black;
+    border-color: var(--back-grey);
+}
+
+/*     BOUTON RECHERCHER      */
+
+.bouton{
+    background-color: var(--color-blue);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    font-size: large;
+    height: 60px;
+    width: 10%;
+}
+.boutonMobile{
+    display: none;
+    background-color: var(--color-blue);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    font-size: large;
+    height: 60px;
+    width: 10%;
+    cursor: pointer;
+}
+.bouton:hover{
+    cursor:pointer;
+    background-color: rgb(0, 17, 255);
+}
+/* ---------------------------------------- */
+/* ==             FILTRES               == */
+/*----------------------------------------*/
+.filters{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px;
+}
+
+/*     FILTRES ENTIERS      */
+
+.titlefilters{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.titlefilters i{
+    color: var(--color-blue);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FiltersButtons{
+    border-radius: 100px;
+    font-size: large;
+    cursor: pointer;
+    border: black 3px solid;
+    border-color: var(--back-grey);
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.FiltersButtons:hover{
+    background-color: var(--bck-blue);
+}
+/***** INFORMATION LOGEMENTS DISPONIBLES *****/
+
+.dispo i{
+    color: var(--color-blue);
+    border: black solid 3px;
+    border-radius: 100%;
+    margin: 10px 15px 10px 15px;       
+    border-color: var(--back-grey);
+}
+/* ---------------------------------------- */
+/* ==           HEBERGEMENTS             ==*/
+/*----------------------------------------*/
+
+.Main{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.Main h3{
+    margin: 0;
+    line-height: normal;
+}
+.Hebergements{
+    background-color:var(--back-grey);
+    border-radius: 20px;
+}
+.Hebergements h2{
+    padding: 20px 0px 0px 15px;
+}
+.Conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content:space-evenly;
+    gap: 30px;
+}
+.Cards{
+    background-color: white;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 20px;
+    line-height: 4px;
+    width: 28%;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+.CardFig{
+    margin: 0;
+}
+.CardFig p{
+    font-weight: bold;
+    font-size: large;
+    line-height: 100%;
+}
+.CardFigImg{
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.NotesCards{
+    color: var(--color-blue);
+}
+/* ---------------------------------------- */
+/* ==            POPULAIRES              ==*/
+/*----------------------------------------*/
+
+.Popular{
+    background-color: var(--back-grey);
+    border-radius: 20px;
+    padding: 25px;
+}
+.PopTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PopTop i{
+    color: var(--color-blue);
+    height: fit-content;
+}
+.PopConteneur{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.PopLink{
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+    padding: 6px;
+    border-radius: 20px;
+    line-height: 5px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+.PopFigImg{
+    display: block;
+    width: 40%;
+    height: 144px;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+.PopFigText{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    width: 60%;
+    font-size: 15px;
+}
+.NotesPop{
+    color: var(--color-blue);
+}
+.Plus{
+    margin-left: 55px;
+}
+/* ---------------------------------------- */
+/* ==            Activités               ==*/
+/*----------------------------------------*/
+
+.ListActivities{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.ListActivities img{
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+}
+.ActCard{
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+.ActCard h3{
+    padding-left: 10px;
+}
+/* ---------------------------------------- */
+/* ==              Footer                ==*/
+/*----------------------------------------*/
+footer{
+    display: flex;
+    padding: 0 3%;
+    background-color: var(--back-grey);
+    margin-top: 2%;
+}
+footer div{
+    text-align: left;
+    flex: 1;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer li{
+    line-height: 2;
+}
+/* ---------------------------------------- */
+/* ==       Media Queries Tablette       ==*/
+/*----------------------------------------*/
+@media ( max-width: 992px) {
+    .filters{
+        width: 100%;
+    }
+    .bouton{
+        background-color: var(--color-blue);
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0px 20px 20px 0px;
+        font-size: large;
+        height: 60px;
+        width: 20%;
+    }
+    .boutonMobile{
+        display: none;
+    }
+    .Main{
+        flex-direction: column;
+        margin: 0;
+    }
+    .Cards{
+        width: 25%;
+    }
+    .Popular{
+        width: 95%;
+        margin: 0;
+    }
+    .PopConteneur{
+        flex-direction: row;
+    }
+    .PopConteneur h3{
+        line-height: normal;
+    }
+    .PopLink{
+        width: 95%;
+    }
+    .PopFigImg{
+        width: 50%;
+        height: 100%;
+    }
+    .PopFigText{
+        width: 95%;
+    }
+    .ActCard{
+        height: 80%;
+        width: 25%;
+    }
+    .ActCard img{
+        height: 300px;
+        width: 100%;
+    }
+}
+/* ---------------------------------------- */
+/* ==        Media Queries Phone         ==*/
+/*----------------------------------------*/
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        display: flex;
+    }
+    .listnav ul{
+        padding: 0;
+    }
+    header nav ul li{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin: 0px;
+        border-top: none;
+        border-bottom: 3px solid transparent;
+    }
+    header nav ul li a{
+        font-size: 22px;
+    }
+    .searchbar{
+        width: 95%;
+        font-size: 30px;
+    }
+    .searchbar h1 , p{
+        margin-left: 2%;
+    }
+    .bar{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon{
+        font-size: 20px;
+    }
+    .bouton{
+        font-size: 25px;
+        display: none;
+    }
+    .boutonMobile{
+        font-size: 20px;
+        display: inline;
+    }
+    .champ{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .filters{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filters h2{
+        padding-left: 2%;
+    }
+    .dispo{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .titlefilters{
+        width: 95%;
+        gap: 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .FiltersButtons{
+        width: 49%;
+        height: 60px;
+        margin-top: 15px;
+    }
+    .Popular{
+        width: 90%;
+        padding: 2%;
+        margin: auto;
+    }
+    .PopFigImg{
+        width: 33%;
+        height: 200px;
+    }
+    .PopFigText{
+        width: 100%;
+    }
+    .NotesPop{
+        margin-top: 20%;
+    }
+    .Main{
+        flex-direction: column-reverse;
+    }
+    .Hebergements{
+        width: 90%;
+        padding: 2%;
+        margin: auto;
+        background-color: white;
+    }
+    .PopConteneur{
+        flex-direction: column;
+        height: fit-content;
+        gap: 50px;
+        align-items: center;
+    }
+    .Conteneur{
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .Cards{
+        width: 90%;
+    }
+    .CardFigImg{
+        height: 200px;
+        width: 100%;
+    }
+    .ListActivities{
+        flex-direction: column ;
+        height: fit-content;
+        gap: 50px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15%;
+    }
+    .ActCard{
+        width: 100%;
+    }
+    .ActCard img{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        font-size: large;
+    }
+}
